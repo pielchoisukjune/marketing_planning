@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="image">
+        <!=THUMNAIL_CONTENTS=!>
+    </div>
+    <div class="content">
+        <div style='font-size : 12px; font-family: "Noto Sans KR", sans-serif;'>
+            <!=TITLE=!>
+            <i class="<!=GENDER_ICON=!> icon" style="margin : 0px"></i>
+        </div>
+        <div class="meta" style='font-size : 12px;font-family: "Noto Sans KR", sans-serif;'>
+            <span style='font-size : 12px; font-family: "Noto Sans KR", sans-serif;'><!=CATEGORY=!></span>
+        </div>
+        <div class="description"></div>
+    </div>
+    <div class="extra content">
+        <span class="right floated">
+            <!=FACEBOOK_ICON=!>
+            <!=YOUTUBE_ICON=!>
+            <!=INSTAGRAM_ICON=!>
+        </span>
+        <span><i class="red heart icon"></i><span style='font-size : 12px; font-family: "Noto Sans KR", sans-serif;'> <!=FOLLOWER=!></span></span>
+    </div>
+</div>
+
+			

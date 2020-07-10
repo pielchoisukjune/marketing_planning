@@ -1,0 +1,8 @@
+		<h4 class="ui left aligned header"><!=TITLE=!></h4>
+		<div class="ui grid">
+		  <div class="sixteen wide column">
+		  	<div class="ui segment">
+  				<!=CONTENTS=!>
+			</div>
+		  </div>
+		</div>

@@ -1,0 +1,9 @@
+  <div class="card">
+    <div class="content">
+      <div class="header" style="font-size : 12px;"><!=city=!></div>
+      <div class="description" style="font-size : 11px;">
+        도달 : <!=reach=!><br>
+        노출 : <!=view=!>
+      </div>
+    </div>
+  </div>

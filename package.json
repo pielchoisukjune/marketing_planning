@@ -1,0 +1,25 @@
+{
+  "name": "marketing_report",
+  "version": "1.0.0",
+  "description": "",
+  "main": "make_data_dewytree.js",
+  "dependencies": {
+    "googleapis": "^39.2.0",
+    "iconv-lite": "^0.6.2",
+    "metaget": "^1.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pielchoisukjune/marketing_report.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pielchoisukjune/marketing_report/issues"
+  },
+  "homepage": "https://github.com/pielchoisukjune/marketing_report#readme"
+}

@@ -1,0 +1,6 @@
+<div class="card">
+	<div class="content">
+		<div class="header" style="font-size : 12px;"><!=LABEL=!></div>
+		<div class="description" style="font-size : 20px;color:#000;"><b><!=VALUE=!></b></div>
+	</div>
+</div>
