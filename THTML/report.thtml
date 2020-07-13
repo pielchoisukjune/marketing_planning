@@ -299,7 +299,7 @@ var barChartTime = function( domId, title, arr ){
  */
 var drawVisualization = function(){
 
-	var data = google.visualization.arrayToDataTable(<!=MAP_DATA_00=!>);
+	var data = google.visualization.arrayToDataTable( mapData );
 
 	var opts = {
 		region: 'VN'
@@ -318,14 +318,18 @@ var drawVisualization = function(){
 	});
 	geochart.draw(data, opts);
 };
-
+</script>
+<script>
+var mapData = <!=MAP_DATA_00=!>;
 var pieChartData00 = <!=AGES00_DATA=!>;
 var pieChartData01 = <!=AGES01_DATA=!>;
 var pieChartData02 = <!=AGES02_DATA=!>;
 var pieChartData03 = <!=AGES03_DATA=!>;
 
 var barChartData00 = <!=TIME_DATA=!>;
+</script>
 
+<script>
 am4core.ready(function() {
 	am4core.useTheme(am4themes_animated);
 
@@ -350,6 +354,10 @@ google.setOnLoadCallback(drawVisualization);
 		<!--h3 class="ui left aligned header">6월 Marketing Report</h3-->
 		<!--div class="ui divider"></div-->
 
+
+
+
+
 		<!--월간진행수량-->
 		<h3  class="ui left aligned header">월별 마케팅 진행계획</h3>
 		<div class="ui grid">
@@ -357,6 +365,9 @@ google.setOnLoadCallback(drawVisualization);
 				<!=MONTHLY_TABLE=!>
 			</div>
 		</div>
+		<!--월간진행수량-->
+
+
 		
 		<!--월간진행수량-->
 		<h3  class="ui left aligned header">월별 마케팅 집행 비용</h3>
@@ -365,6 +376,10 @@ google.setOnLoadCallback(drawVisualization);
 				<!=COST_TABLE=!>
 			</div>
 		</div>
+		<!--월간진행수량-->
+
+
+
 
 		<!--월간진행수량-->
 		<h3  class="ui left aligned header">6개월 서비스 제안 비용</h3>
@@ -373,10 +388,19 @@ google.setOnLoadCallback(drawVisualization);
 				<!=COST_TOTAL=!>
 			</div>
 		</div>
+		<!--월간진행수량-->
+
+
+
+
 
 		<!--월간이슈-->
 		<h3  class="ui left aligned header">브랜드 분석 및 마케팅 진행의견</h3>
 		<!=INSIGHT=!>
+		<!--월간이슈-->
+
+
+
 
 		<!--페이스북 광고 통계-->
 		<!--h3  class="ui left aligned header"><i class="large facebook square icon"></i><!=TARGET_MONTH=!>월 페이스북 광고 통계</h3>
@@ -394,12 +418,16 @@ google.setOnLoadCallback(drawVisualization);
 			<div class="eight wide column"><div id="chartdiv02_loader" class="ui active inverted dimmer"><div class="ui text loader">Loading</div></div><div id="chartdiv02"></div></div>
 			<div class="eight wide column"><div id="chartdiv03_loader" class="ui active inverted dimmer"><div class="ui text loader">Loading</div></div><div id="chartdiv03"></div></div>
 		</div>
+		<!--페이스북 연령별 통계-->
+
+
 
 		<!--페이스북 연령별 통계-->
 		<h3  class="ui left aligned header"><i class="large facebook square icon"></i>2020년 페이스북 평균 시간별 통계</h3>
 		<div class="ui grid">
 			<div class="sixteen wide column"><div id="chartdiv04_loader" class="ui active inverted dimmer"><div class="ui text loader">Loading</div></div><div id="chartdiv04"></div></div>
 		</div>
+		<!--페이스북 연령별 통계-->
 
 
 		<!--페이스북 지역별 통계-->
@@ -411,13 +439,22 @@ google.setOnLoadCallback(drawVisualization);
 				</div>
 				<div id="visualization" style="height: 100%;"></div>
 			</div>
+		</div>
+		<!--페이스북 지역별 통계-->
+
+
+
 
 		<!--페이스북 지역별 데이터-->
-			<h3  class="ui left aligned header"><i class="large facebook square icon"></i>2020년 페이스북 월간 평균 지역별 통계자료</h3>
+		<h3  class="ui left aligned header"><i class="large facebook square icon"></i>2020년 페이스북 월간 평균 지역별 통계자료</h3>			
+		<div class="ui grid">
+			<div class="sixteen wide column" style="min-height : 600px;">
+			
 			<div class="sixteen wide column">
 				<div class="ui ten stackable cards"><!=LOCATION_TABLE=!></div>
 			</div>
 		</div>
+		<!--페이스북 지역별 데이터-->
 
 		<!--KOLs-->
 		<h3 class="ui left aligned header">KOLs</h3>
@@ -426,6 +463,7 @@ google.setOnLoadCallback(drawVisualization);
 				<div class="ui six stackable cards"><!=KOLS=!></div>
 			</div>
 		</div>
+		<!--KOLs-->
 
 		<!--광고집행 내역-->
 		<h3 class="ui left aligned header">피엘 마케팅 샘플</h3>

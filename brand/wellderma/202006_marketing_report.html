@@ -297,9 +297,9 @@ var barChartTime = function( domId, title, arr ){
 /*
  *
  */
-var drawVisualization = function(){
+var drawVisualization = function( data ){
 
-	var data = google.visualization.arrayToDataTable( mapData );
+	var data = google.visualization.arrayToDataTable( data );
 
 	var opts = {
 		region: 'VN'
@@ -365,56 +365,66 @@ google.setOnLoadCallback(drawVisualization);
 	<thead>
 	<tr><th style='width:18%;font-weight: 400;font-size: 12px;'>목록</th>
 <th style='width:26%;font-weight: 400;font-size: 12px;'>세부사항</th>
-<th style='width:8%;font-weight: 400;font-size: 12px;'>8월</th>
 <th style='width:8%;font-weight: 400;font-size: 12px;'>9월</th>
 <th style='width:8%;font-weight: 400;font-size: 12px;'>10월</th>
 <th style='width:8%;font-weight: 400;font-size: 12px;'>11월</th>
 <th style='width:8%;font-weight: 400;font-size: 12px;'>12월</th>
-<th style='width:8%;font-weight: 400;font-size: 12px;'>01월</th>
+<th style='width:8%;font-weight: 400;font-size: 12px;'>1월</th>
+<th style='width:8%;font-weight: 400;font-size: 12px;'>2월</th>
 <th style='width:8%;font-weight: 400;font-size: 12px;'>합계</th>
 </tr>
 
 	</thead>
 	<tbody>
-	<tr><td style='font-size:11px;'>컨텐츠 : 본사 미러링</td>
+	<tr><td style='font-size:11px;'>컨텐츠 (이미지) : 본사 미러링</td>
 <td style='font-size:11px;'>Facebook , Instagram</td>
-<td style='font-size:11px;'>12</td>
-<td style='font-size:11px;'>12</td>
-<td style='font-size:11px;'>12</td>
-<td style='font-size:11px;'>12</td>
-<td style='font-size:11px;'>12</td>
-<td style='font-size:11px;'>12</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>72</td>
+<td style='font-size:11px;'>8</td>
+<td style='font-size:11px;'>8</td>
+<td style='font-size:11px;'>8</td>
+<td style='font-size:11px;'>8</td>
+<td style='font-size:11px;'>8</td>
+<td style='font-size:11px;'>8</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>48</td>
 </tr>
-<tr><td style='font-size:11px;'>컨텐츠 : 비나피엘 제작</td>
+<tr><td style='font-size:11px;'>컨텐츠 (영상) : 본사 미러링</td>
 <td style='font-size:11px;'>Facebook , Instagram</td>
-<td style='font-size:11px;'>18</td>
-<td style='font-size:11px;'>18</td>
-<td style='font-size:11px;'>15</td>
-<td style='font-size:11px;'>15</td>
-<td style='font-size:11px;'>10</td>
-<td style='font-size:11px;'>10</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>86</td>
+<td style='font-size:11px;'>2</td>
+<td style='font-size:11px;'>2</td>
+<td style='font-size:11px;'>2</td>
+<td style='font-size:11px;'>2</td>
+<td style='font-size:11px;'>2</td>
+<td style='font-size:11px;'>2</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>12</td>
+</tr>
+<tr><td style='font-size:11px;'>컨텐츠 (이미지) : 비나피엘 제작기준</td>
+<td style='font-size:11px;'>Facebook , Instagram</td>
+<td style='font-size:11px;'>4</td>
+<td style='font-size:11px;'>4</td>
+<td style='font-size:11px;'>4</td>
+<td style='font-size:11px;'>4</td>
+<td style='font-size:11px;'>4</td>
+<td style='font-size:11px;'>4</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>24</td>
 </tr>
 <tr><td style='font-size:11px;'>리뷰</td>
 <td style='font-size:11px;'>fimi ,Facebook beauty review web page</td>
-<td style='font-size:11px;'>4</td>
-<td style='font-size:11px;'>4</td>
 <td style='font-size:11px;'>2</td>
 <td style='font-size:11px;'>2</td>
-<td style='font-size:11px;'>2</td>
-<td style='font-size:11px;'>2</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>16</td>
+<td style='font-size:11px;'>1</td>
+<td style='font-size:11px;'>1</td>
+<td style='font-size:11px;'>1</td>
+<td style='font-size:11px;'>1</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>8</td>
 </tr>
 <tr><td style='font-size:11px;'>체험단 이벤트</td>
 <td style='font-size:11px;'>Facebook event , Facebook mini game</td>
-<td style='font-size:11px;'>4</td>
-<td style='font-size:11px;'>4</td>
 <td style='font-size:11px;'>2</td>
 <td style='font-size:11px;'>2</td>
-<td style='font-size:11px;'>2</td>
-<td style='font-size:11px;'>2</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>16</td>
+<td style='font-size:11px;'>1</td>
+<td style='font-size:11px;'>1</td>
+<td style='font-size:11px;'>1</td>
+<td style='font-size:11px;'>1</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>8</td>
 </tr>
 <tr><td style='font-size:11px;'>뷰티유투버</td>
 <td style='font-size:11px;'>beauty youtuber</td>
@@ -422,7 +432,7 @@ google.setOnLoadCallback(drawVisualization);
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'>1</td>
 <td style='font-size:11px;'>1</td>
-<td style='font-size:11px;'></td>
+<td style='font-size:11px;'>1</td>
 <td style='font-size:11px;'>1</td>
 <td style='font-size:11px;background-color : yellow;color:red;'>3</td>
 </tr>
@@ -430,11 +440,11 @@ google.setOnLoadCallback(drawVisualization);
 <td style='font-size:11px;'>Influencer</td>
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'></td>
-<td style='font-size:11px;'>5</td>
-<td style='font-size:11px;'>5</td>
-<td style='font-size:11px;'>5</td>
-<td style='font-size:11px;'>5</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>20</td>
+<td style='font-size:11px;'>3</td>
+<td style='font-size:11px;'>3</td>
+<td style='font-size:11px;'>3</td>
+<td style='font-size:11px;'>3</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>12</td>
 </tr>
 <tr><td style='font-size:11px;'>언론사</td>
 <td style='font-size:11px;'>News paper</td>
@@ -442,7 +452,7 @@ google.setOnLoadCallback(drawVisualization);
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'>1</td>
-<td style='font-size:11px;'></td>
+<td style='font-size:11px;'>-</td>
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;background-color : yellow;color:red;'>1</td>
 </tr>
@@ -450,31 +460,31 @@ google.setOnLoadCallback(drawVisualization);
 <td style='font-size:11px;'>Video clip</td>
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'></td>
+<td style='font-size:11px;'>1</td>
 <td style='font-size:11px;'></td>
-<td style='font-size:11px;'>1</td>
-<td style='font-size:11px;'>1</td>
-<td style='font-size:11px;'>1</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>3</td>
+<td style='font-size:11px;'></td>
+<td style='font-size:11px;'></td>
+<td style='font-size:11px;background-color : yellow;color:red;'>1</td>
 </tr>
 <tr><td style='font-size:11px;'>구글 키워드 광고</td>
 <td style='font-size:11px;'>Google Ads,Google Shopping</td>
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'></td>
-<td style='font-size:11px;'></td>
-<td style='font-size:11px;'></td>
 <td style='font-size:11px;'>1</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>1</td>
+<td style='font-size:11px;'>1</td>
+<td style='font-size:11px;'>1</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>1.5</td>
 </tr>
 <tr><td style='font-size:11px;'>유투브 스킵광고</td>
 <td style='font-size:11px;'>Youtube Skip Ads.</td>
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'></td>
-<td style='font-size:11px;'></td>
 <td style='font-size:11px;'>1</td>
 <td style='font-size:11px;'>1</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>2</td>
+<td style='font-size:11px;'>1</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>1.5</td>
 </tr>
 <tr><td style='font-size:11px;'>FB,INSTA 노출광고</td>
 <td style='font-size:11px;'>Facebook , Instagram Business Ads</td>
@@ -503,12 +513,12 @@ google.setOnLoadCallback(drawVisualization);
 	<thead>
 	<tr><th style='width:18%;font-weight: 400;font-size: 12px;'>목록</th>
 <th style='width:26%;font-weight: 400;font-size: 12px;'>세부사항</th>
-<th style='width:8%;font-weight: 400;font-size: 12px;'>8월</th>
 <th style='width:8%;font-weight: 400;font-size: 12px;'>9월</th>
 <th style='width:8%;font-weight: 400;font-size: 12px;'>10월</th>
 <th style='width:8%;font-weight: 400;font-size: 12px;'>11월</th>
 <th style='width:8%;font-weight: 400;font-size: 12px;'>12월</th>
-<th style='width:8%;font-weight: 400;font-size: 12px;'>01월</th>
+<th style='width:8%;font-weight: 400;font-size: 12px;'>1월</th>
+<th style='width:8%;font-weight: 400;font-size: 12px;'>2월</th>
 <th style='width:8%;font-weight: 400;font-size: 12px;'>합계</th>
 </tr>
 
@@ -516,43 +526,43 @@ google.setOnLoadCallback(drawVisualization);
 	<tbody>
 	<tr><td style='font-size:11px;'>이미지/6만</td>
 <td style='font-size:11px;'>컨텐츠</td>
-<td style='font-size:11px;'>₩1,080,000</td>
-<td style='font-size:11px;'>₩1,080,000</td>
-<td style='font-size:11px;'>₩900,000</td>
-<td style='font-size:11px;'>₩900,000</td>
-<td style='font-size:11px;'>₩600,000</td>
-<td style='font-size:11px;'>₩600,000</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>₩5,160,000</td>
+<td style='font-size:11px;'>₩240,000</td>
+<td style='font-size:11px;'>₩240,000</td>
+<td style='font-size:11px;'>₩240,000</td>
+<td style='font-size:11px;'>₩240,000</td>
+<td style='font-size:11px;'>₩240,000</td>
+<td style='font-size:11px;'>₩240,000</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>₩1,440,000</td>
 </tr>
 <tr><td style='font-size:11px;'>리뷰/20만</td>
 <td style='font-size:11px;'>리뷰</td>
-<td style='font-size:11px;'>₩800,000</td>
-<td style='font-size:11px;'>₩800,000</td>
 <td style='font-size:11px;'>₩400,000</td>
 <td style='font-size:11px;'>₩400,000</td>
+<td style='font-size:11px;'>₩200,000</td>
+<td style='font-size:11px;'>₩200,000</td>
+<td style='font-size:11px;'>₩200,000</td>
 <td style='font-size:11px;'>₩400,000</td>
-<td style='font-size:11px;'>₩400,000</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>₩3,200,000</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>₩1,800,000</td>
 </tr>
-<tr><td style='font-size:11px;'>이벤트/10만</td>
+<tr><td style='font-size:11px;'>이벤트/20만</td>
 <td style='font-size:11px;'>체험단 이벤트 현금증정</td>
-<td style='font-size:11px;'>₩400,000</td>
-<td style='font-size:11px;'>₩400,000</td>
 <td style='font-size:11px;'>₩200,000</td>
 <td style='font-size:11px;'>₩200,000</td>
+<td style='font-size:11px;'>₩100,000</td>
+<td style='font-size:11px;'>₩100,000</td>
+<td style='font-size:11px;'>₩100,000</td>
 <td style='font-size:11px;'>₩200,000</td>
-<td style='font-size:11px;'>₩200,000</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>₩1,600,000</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>₩900,000</td>
 </tr>
-<tr><td style='font-size:11px;'>이벤트/10만</td>
+<tr><td style='font-size:11px;'></td>
 <td style='font-size:11px;'>체험단 이벤트</td>
-<td style='font-size:11px;'>₩400,000</td>
-<td style='font-size:11px;'>₩400,000</td>
 <td style='font-size:11px;'>₩200,000</td>
 <td style='font-size:11px;'>₩200,000</td>
-<td style='font-size:11px;'>₩200,000</td>
-<td style='font-size:11px;'>₩200,000</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>₩1,600,000</td>
+<td style='font-size:11px;'>₩100,000</td>
+<td style='font-size:11px;'>₩100,000</td>
+<td style='font-size:11px;'>₩100,000</td>
+<td style='font-size:11px;'>₩100,000</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>₩800,000</td>
 </tr>
 <tr><td style='font-size:11px;'>건당/150만</td>
 <td style='font-size:11px;'>뷰티유투버 (단독)</td>
@@ -560,19 +570,19 @@ google.setOnLoadCallback(drawVisualization);
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'>₩1,500,000</td>
 <td style='font-size:11px;'>₩1,500,000</td>
-<td style='font-size:11px;'></td>
-<td style='font-size:11px;'>₩1,500,000</td>
+<td style='font-size:11px;'>₩750,000</td>
+<td style='font-size:11px;'>₩750,000</td>
 <td style='font-size:11px;background-color : yellow;color:red;'>₩4,500,000</td>
 </tr>
 <tr><td style='font-size:11px;'>건당/20만</td>
 <td style='font-size:11px;'>인플루언서 (나노)</td>
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'></td>
-<td style='font-size:11px;'>₩1,000,000</td>
-<td style='font-size:11px;'>₩1,000,000</td>
-<td style='font-size:11px;'>₩1,000,000</td>
-<td style='font-size:11px;'>₩1,000,000</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>₩4,000,000</td>
+<td style='font-size:11px;'>₩600,000</td>
+<td style='font-size:11px;'>₩600,000</td>
+<td style='font-size:11px;'>₩600,000</td>
+<td style='font-size:11px;'>₩600,000</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>₩2,400,000</td>
 </tr>
 <tr><td style='font-size:11px;'>건당/100만</td>
 <td style='font-size:11px;'>언론사</td>
@@ -588,31 +598,31 @@ google.setOnLoadCallback(drawVisualization);
 <td style='font-size:11px;'>영상제작</td>
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'></td>
+<td style='font-size:11px;'>₩1,600,000</td>
 <td style='font-size:11px;'></td>
-<td style='font-size:11px;'>₩1,600,000</td>
-<td style='font-size:11px;'>₩1,600,000</td>
-<td style='font-size:11px;'>₩1,600,000</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>₩4,800,000</td>
+<td style='font-size:11px;'></td>
+<td style='font-size:11px;'></td>
+<td style='font-size:11px;background-color : yellow;color:red;'>₩1,600,000</td>
 </tr>
 <tr><td style='font-size:11px;'>책정</td>
 <td style='font-size:11px;'>구글 키워드 광고</td>
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'></td>
-<td style='font-size:11px;'></td>
-<td style='font-size:11px;'></td>
 <td style='font-size:11px;'>₩500,000</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>₩500,000</td>
+<td style='font-size:11px;'>₩500,000</td>
+<td style='font-size:11px;'>₩500,000</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>₩1,500,000</td>
 </tr>
 <tr><td style='font-size:11px;'>책정</td>
 <td style='font-size:11px;'>유투브 스킵광고</td>
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'></td>
 <td style='font-size:11px;'></td>
-<td style='font-size:11px;'></td>
 <td style='font-size:11px;'>₩500,000</td>
 <td style='font-size:11px;'>₩500,000</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>₩1,000,000</td>
+<td style='font-size:11px;'>₩500,000</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>₩1,500,000</td>
 </tr>
 <tr><td style='font-size:11px;'>책정</td>
 <td style='font-size:11px;'>FB,INSTA 노출광고</td>
@@ -636,13 +646,13 @@ google.setOnLoadCallback(drawVisualization);
 </tr>
 <tr style='font-size:11px;background-color : yellow;color:red;'><td style='font-size:11px;'></td>
 <td style='font-size:11px;'>합계</td>
-<td style='font-size:11px;'>₩4,780,000</td>
-<td style='font-size:11px;'>₩4,780,000</td>
-<td style='font-size:11px;'>₩6,300,000</td>
-<td style='font-size:11px;'>₩8,900,000</td>
-<td style='font-size:11px;'>₩6,600,000</td>
-<td style='font-size:11px;'>₩8,600,000</td>
-<td style='font-size:11px;background-color : yellow;color:red;'>₩39,960,000</td>
+<td style='font-size:11px;'>₩3,140,000</td>
+<td style='font-size:11px;'>₩3,140,000</td>
+<td style='font-size:11px;'>₩6,440,000</td>
+<td style='font-size:11px;'>₩6,840,000</td>
+<td style='font-size:11px;'>₩5,090,000</td>
+<td style='font-size:11px;'>₩5,390,000</td>
+<td style='font-size:11px;background-color : yellow;color:red;'>₩30,040,000</td>
 </tr>
 	
 	</tbody>
@@ -658,7 +668,7 @@ google.setOnLoadCallback(drawVisualization);
 		<h3  class="ui left aligned header">6개월 서비스 제안 비용</h3>
 		<div class="ui grid">
 			<div class="sixteen wide column">
-				<p style="text-align: center;"><span style="font-size: 14px; color: rgb(255, 255, 255);">총금액</span></p><p style="text-align: center;"><span style="color: rgb(255, 255, 255);"><span style="font-size: 20px;"><s>₩39,960,000</s></span></span></p><p style="text-align: center;"><br></p><p style="text-align: center;"><span style="font-size: 14px; color: rgb(255, 255, 255);">총 금액( 할인적용 - 부가세별도 )&nbsp;</span></p><p style="text-align: center;"><span style="font-size: 30px; color: yellow;">₩36,000,000</span></p>
+				<p style="text-align: center;"><span style="font-size: 14px; color: rgb(255, 255, 255);">총금액</span></p><p style="text-align: center;"><span style="color: rgb(255, 255, 255);"><span style="font-size: 20px;"><s>₩30,040,000</s></span></span></p><p style="text-align: center;"><br></p><p style="text-align: center;"><span style="font-size: 14px; color: rgb(255, 255, 255);">총 금액( 할인적용 - 부가세별도 )&nbsp;</span></p><p style="text-align: center;"><span style="font-size: 30px; color: yellow;">₩30,000,000</span></p>
 			</div>
 		</div>
 		<!--월간진행수량-->
@@ -669,35 +679,43 @@ google.setOnLoadCallback(drawVisualization);
 
 		<!--월간이슈-->
 		<h3  class="ui left aligned header">브랜드 분석 및 마케팅 진행의견</h3>
-				<h4 class="ui left aligned header">1-1. 베트남 현지 분석</h4>
+				<h4 class="ui left aligned header">1-1. 베트남 BEAUTY MARKET</h4>
 		<div class="ui grid">
 		  <div class="sixteen wide column">
 		  	<div class="ui segment">
-  				베트남의 MAKE UP 주요고객 및 시장트랜드의 주도는 젊은층이 주도적임 (10대 - 30대) <br>젋은 층 중에서도 두가지 계층으로 나뉠수 있음 (10대 - 20대중반 , 20대중반 - 30대) <br>10대 - 20대중반의 계층이 트랜드를 선도하고 20대 - 30대초반이 시장의 구매력을 이끌고 있음.<br>따라서 마케팅과 구매포인트를 각각 달리해아함.<br>젊은 층은 MAKE UP 제품에 관련된 정보를 Facebook Instagram Youtube Tiktok 등의 SNS를 통해 새로운 제품 및 제품의 정보를 얻음.<br>따라서 색조의 경우 노출 수, 컨텐츠 퀄리티 , 발색 , 색감 위주의 표현이 중요함.
+  				베트남의 BEAUTY 주요고객 및 시장트랜드의 주도는 젊은층이 주도적임 (10대 - 30대) <br> 젋은 층 중에서도 두가지 계층으로 나뉠수 있음 (10대 - 20대중반 , 20대중반 - 30대) <br> 10대 - 20대중반의 계층이 트랜드를 선도하고 20대 - 30대초반이 시장의 구매력을 이끌고 있음.<br> 따라서 마케팅과 구매포인트를 각각 달리해아함.<br> 젊은 층은 BEAUTY 제품에 관련된 정보를 Facebook, Instagram, Youtube, Tiktok 등의 SNS를 통해 새로운 제품 및 제품의 정보를 얻음.
 			</div>
 		  </div>
 		</div>
-		<h4 class="ui left aligned header">1-2. 색조화장품 베트남 시장 분석</h4>
+		<h4 class="ui left aligned header">1-2. 베트남 SKIN CARE 시장분석</h4>
 		<div class="ui grid">
 		  <div class="sixteen wide column">
 		  	<div class="ui segment">
-  				고객층 : 베트남의 주 고객층 (10대 - 30대) 의 인구 집중 분포로 인한 색조 아이템의 니즈가 높음. (립, 아이라이너 , 파운데이션 등) <br>            주 고객층이 젊은 층으로 형성되 있어 트렌드의 변화가 빠르고 그로인해 새로운 제품에 대한 니즈도 높음. <br>            위 사항으로 인해 색조 브랜드사들이 신규제품을 지속적으로 출시 하는 상황임.<br><br>색조제품별 구매력.<br><br><br>1. 립 관련 : 2020년 베트남 트랜드는 립틴트 계열로 치중되 있음 (블랙루즈 , 3ce , bbia , peripera)<br>                 2017년 기준으로 빠르게 틴트류의 구매력이 높아지고 있음.<br>                 기존 (2016년) 까지는 유명 브랜드의 (3ce) 베트남 시장 점유율이 높았음. 하지만, 높은 가격대의 selling 으로인해 신규브랜드의 (black rouge) 제품 및 낮은가격의 마케팅으로 시장을 잠입해 가고 있는 상황임.<br>   판매기준 : 월 100,000개 (블랙루즈 기준) 2020년 현재기준                     <br><br>2. 피부관련 제품 : 베트남 국가 지역의 특성 (아시아인) 으로 인해 White Face 에 니즈가 뚜렷함.  2017년 이전엔 Whitening cream 제품에서 자연스러운 피부톤에 맞는 make up 으로 변화되고 있음.<br>                           2017년 이후 피부 관련 제품 구매 수요 상증중임. 동반작용으로 face make up제품들도 구매력이 높아지는 추세임. <br>                           조성아 팩트 , APRILSKIN , LIME 등 한국브랜드 의 face make up 제품의 구매력이 높음. <br>    <br>
+  				베트남 여성 '미'의 기준 깨끗한 피부, Whitening<br> <br> 2015년 이전 베트남 시장은 Make-up 및 Whitening 제품에 주로 치중되 있었음. <br> 2016년 이후 제품의 소비자의 Beauty 제품의 관심도가 여러 제품에서 폭넓게 증가됨.<br> BEAUTY 제품의 초기 진입단계 였던 베트남 역시 Make-up 에서 점차적으로 Skin Care 제품으로 소비자의 관심이 이뤄지고 있는 상황임.<br> Vietnam CITY에 집중되 있는 많은 SPA Shop 및 Drug Store (Watsons , Medicare , Guardian , Pharmacity) 들은 해외 다양한 BRAND의 Skin Care 제품을 취급.<br> Vietnam 의 Skin Care 시장은 지속적으로 상승.
 			</div>
 		  </div>
 		</div>
-		<h4 class="ui left aligned header">1-3. Self_coding 베트남 진출 아이템 선정</h4>
+		<h4 class="ui left aligned header">1-3. WELLDERMA Vietnam 시장의 문제점 및 변화</h4>
 		<div class="ui grid">
 		  <div class="sixteen wide column">
 		  	<div class="ui segment">
-  				SelfCoding matte liquid Tint <br>- 베트남 지역의 특성과 잘 어울림 (매트한 텍스처 및 뚜렷한 발색력) <br>- 젊은 층에 맞는 심플한 디자인.<br>- 다양한 컬러 <br>- Medium Price<br><br>SelfCoding liquid Foundation<br>- 리퀴드 제형의 가벼운 발림성 <br>- 젊은 층에 맞는 심플한 디자인.<br>- 다양한 컬러 <br>- Medium Price
+  				WellDerma Cleansing fish 는 Vietnam market 에서 쉽게 Content 를 발견할수 있음. <br> 하지만 단일 Product name (Cleansing fish) 의 인식으로 인해 Wellderma Brand 의 소비자 인식이 저하되 있는 상태임. <br> 상기 이유는 Brand 의 Marketing 이전 Wholesaler의 유통으로 인한 단일 제품의 노출이 큰 문제점으로 지적됨.<br> 대부분의 Vietnam Wholesaler 는 Brand의 성장보다 profit에 치중되어 있음.<br> 따라서 WellDerma 는 Brand 의 다양한 제품을 고객에게 노출 , 홍보의 필요성이 있음.<br> 위의 형태는 WellDerma가 신규 제품의 Vietnam 시장진출에 큰 도움이 될 것임.
 			</div>
 		  </div>
 		</div>
-		<h4 class="ui left aligned header">1-4. Self_coding 베트남 Marketing Point</h4>
+		<h4 class="ui left aligned header">1-4. PIEL's WELLDERMA Marketing</h4>
 		<div class="ui grid">
 		  <div class="sixteen wide column">
 		  	<div class="ui segment">
-  				Marketing 주 타겟 : 10대후반 - 20대 초반의 니즈에 맞는 컨텐츠 생성 (이미지 컨텐츠 위주로 생성) - Data 기반의 섭외 (인플루언서 및 유투버 활용)<br>Marketing 집행 : 20대 초 - 20대 중 (시장의 가장 구매력이 있는계층 타겟) - Data 기반의 운영 (노출 위치 , 노출 시간등을 활용)<br>Marketing Point : Point Color & Basic Get price (10대의 easy point를 기반으로 좋은 후기를 남기고 쉽게 Get 할수 있도록 유도)<br>Marketing Start Point : 1. 한정 프로모션 기획 (ex. SelfCoding matte liquid Tint + Glitter balm (증정) , SelfCoding liquid Foundation + Glitter balm (증정)<br>                                     2. 고객 체험단의 모집 ( 오피셜 페이지의 팔로워 , 라이크 수의 증가효과) <br>                                     3. 리뷰 및 뷰티그룹 제품 노출 
+  				1. 다양한 채널 및 SNS를 통한 브랜드 광고 (Ex. Drug Store 입점 및 Watson 과의 협업 광고 마케팅) : 브랜드의 인지도 상승 <br> 2. WellDerma Official page 의 지속적 관리 : 진성 고객의 확대 및 신규고객의 유입의 증대 및 고객관리.<br> 3. 베트남 소비자 니즈에 맞는 제품 컨텐츠생성 : 소비자의 웰더마 제품구매 유도 및 제품의 상세정보 제공
+			</div>
+		  </div>
+		</div>
+		<h4 class="ui left aligned header">1-5. WELLDERMA Vietnam Marketing Point</h4>
+		<div class="ui grid">
+		  <div class="sixteen wide column">
+		  	<div class="ui segment">
+  				Vietnam 소비자는 Skin Care 의 기초단계인 Cleansing 관련 소비 및 관심도 역시 급상승 중임. <br> 특히 남부 지방은 연평균 28-30도를 웃도는 날씨 및 대중교통 (Motor bike) 의 특성으로 인한 Skin trouble 이 심함.<br> 따라서 Cleansing 의 중요성을 인식, 점차적으로 Cleansing 기능의 다양한 상품군이 시장에 진입하고 있음.<br> <br> - 특이사항-<br> 시장 트랜드 변화에 민감한 베트남 주 고객층 (10대 - 20대중반의 계층이 트랜드를 선도하고 20대 - 30대초반이 시장의 구매력을 이끌고 있음)<br> 주 고객층이 젊은 층으로 이루어 진 베트남 시장은 Product quality 만큼 Product design 에도 관심이 집중되 있음.<br> 신규 브랜드 초기 진입단계에서 Product image content 와 Product review 가 중요한 역활을 하고 있음.<br> <br> WellDerma Point<br> <br> <br> Marketing 주 타겟 : 10대후반 - 20대 초반의 니즈에 맞는 컨텐츠 생성 (이미지 컨텐츠 위주로 생성) - Data 기반의 섭외 (인플루언서 및 유투버 활용)<br> <br> Marketing 집행 : 20대 초 - 20대 중 (시장의 가장 구매력이 있는계층 타겟) - Data 기반의 운영 (노출 위치 , 노출 시간등을 활용)<br> <br> Marketing Point : WellDerma Cleansing fish (기존의 제품인지도를 이용) 와 같이 사용하면 좋은 제품을 노출 (카렌듈라 라인) WellDerma 카렌듈라의 특장점을 노출 극대화함.<br> 단일 제품의 노출이 아닌 여러 제품의 활용성을 이미지 및 영상 컨텐츠에 표현. <br> <br> Marketing Start Point <br> 1. 프로모션 기획 (ex. WellDerma Yello Duck cleansing Pad + WellDerma Cleansing fish (증정) , WellDerma Yello Duck cleansing Pad + WellDerma mask (증정) ) 등의 이벤트로 WellDerma 의 여러 제품을 고객에게 노출 (장기적이고 지속적으로 진행)<br> 2. 고객 체험단의 모집 ( 오피셜 페이지의 팔로워 , 라이크 수의 증가효과) <br> 3. 리뷰 및 뷰티그룹 제품 노출
 			</div>
 		  </div>
 		</div>
