@@ -6,7 +6,7 @@ var fs = require( "fs" );
 //-------------------------------------------------------;
 // VARIABLE;
 //-------------------------------------------------------;
-var result_path = "./brand/selfcoding/"
+var result_path = "./brand/aheads/"
 var FILE_PATH = result_path + "data.json";
 var THTML_PATHS = {
 	cards : "./THTML/card.thtml"
@@ -18,7 +18,7 @@ var THTML_PATHS = {
 	, kols : "./THTML/kols.thtml"
 	, table : "./THTML/table.thtml"
 };
-var brand_nm = "SelfCoding";
+var brand_nm = "Aheads";
 var target_year_month = "202006";
 var target_month = Number( target_year_month.substr( 4,2 ) ).toString();
 
