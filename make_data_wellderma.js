@@ -211,7 +211,7 @@ var FUNC01 = function( auth ){
 				var o = {};
 				for(;z<zLen;++z){
 					zo = io[ z ];
-					o[ _header[ z ] ] = zo.trim();
+					o[ _header[ z ].trim().replace(/\r/g, "").replace(/\n/g, "") ] = zo.trim();
 				}
 				if( !d.total[ io[0] ] ) d.total[ io[0] ] = [];
 				d.total[ io[0] ].push( o )
